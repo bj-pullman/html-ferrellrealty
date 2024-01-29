@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrell Realty - Apply</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/css.css" type="text/css">
+    <link rel="stylesheet" href="./styles/sass.scss" type="text/scss">
+    <script type="text/javascript" src="./styles/js.js"></script>
+</head>
+<body>
+    <!--Ferrell Realty Logo (Header)-->
+
+    <a class="logo" href="./index.html">
+      <img src="./photos/Ferrell_Realty_Logo.jpg" alt="Ferrell_Realty_Logo" id="header-logo">
+  </a>
+
+  <!--Ferrell Realty Logo (Header)-->
+
+
+  <!--Navigation Bar (Home, Properties, Storage, About, Contact Us, Current Residents, Apply)-->
+  <nav class="navbar navbar-customclass navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navigation Bar-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav">
+            <a class="nav-link" id="navbar" href="./index.html">Home</a>
+            <a class="nav-link" id="navbar" href="./properties.html">Properties</a>
+            <a class="nav-link" id="navbar" href="./storage.html">White Hall Storage</a>
+            <a class="nav-link" id="navbar" href="./contact_us.html">Contact Us</a>
+            <a class="nav-link" id="navbar" href="./current_residents.html">Current Residents</a>
+            <a class="nav-link active" aria-current="page" id="navbar" href="./apply.html">Apply</a>
+        </div>
+
+        <!--Navigation Bar-->
+
+      </div>
+    </nav>
+
+    <!--Navigation Bar (Home, Properties, Storage, About, Contact Us, Current Residents, Apply)-->
+
+
+    <!--Application-->
+  <form action="https://formspree.io/f/maykllyd" method="POST" class="applicationForm">
+    <div class="container" id="titleApp">
+      <h4>Ferrell Realty - Rental Application</h4>
+      <p>* Required</p>
+    </div>
+
+    <div class="container-fluid application">
+
+      <!--Name of Occupants and SSN Number-->
+      
+      <p id="titleApp">Occupants</p>
+
+      <div class="row">
+        <label for="name" class="form-label" name="OccupantsName">Please list all adults (18+):</label>
+        <div class="col">
+          <div class="mb-3">
+            <input type="name" class="form-control" id="applicationForm" name="Occupant One:" placeholder="First Occupant*" required>
+            <input type="name" class="form-control" id="applicationForm" name="Occupant Two:" placeholder="Second Occupant">
+            <input type="name" class="form-control" id="applicationForm" name="Occupant Three:" placeholder="Third Occupant">
+            <input type="name" class="form-control" id="applicationForm" name="Occupant Four:" placeholder="Fourth Occupant">
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <input type="number" class="form-control" id="applicationForm" name="Social Security One:" placeholder="SSN - First Occupant*" required>
+            <input type="number" class="form-control" id="applicationForm" name="Social Security Two:" placeholder="SSN - Second Occupant">
+            <input type="number" class="form-control" id="applicationForm" name="Social Security Three:" placeholder="SSN - Third Occupant">
+            <input type="number" class="form-control" id="applicationForm" name="Social Security Four:" placeholder="SSN - Fourth Occupant">
+          </div>
+        </div>
+      </div>
+
+    <!--Employment History-->
+
+      <!--First Occupants History-->
+      <p id="titleApp">Employment History</p>
+      
+      <div class="row">
+        <label for="occupantHistory" class="form-label" id="firstOccupant">First Occupant's History:</label>
+        <div class="col">
+          <div class="mb-3">
+            <input type="name" class="form-control" id="applicationForm" name="Present Employer:" placeholder="Current Employer*" required>
+            <input type="text" class="form-control" id="applicationForm" name="Length of Employment:" placeholder="How long have you been employed?*" required>
+            <input type="number" class="form-control" id="applicationForm" name="Monthly Salary:" placeholder="What is your Monthly Salary?*" required>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <input type="name" class="form-control" id="applicationForm" name="Supervisor:" placeholder="Who is your supervisor?*" required>
+            <input type="number" class="form-control" id="applicationForm" name="Current Employer Phone Number:" placeholder="Phone Number for Current Employer*" required>
+          </div>
+        </div>
+      </div>
+
+      <!--First Occupants History-->
+
+      <!--Second Occupants History-->
+
+
+      <div class="row">
+        <label for="occupantHistory" class="form-label" name="OccupantHistory">Second Occupant's History:</label>
+        <div class="col">
+          <div class="mb-3">
+            <input type="name" class="form-control" id="applicationForm" name="Present Employer:" placeholder="Current Employer">
+            <input type="text" class="form-control" id="applicationForm" name="Length of Employment:" placeholder="How long have you been employed?">
+            <input type="number" class="form-control" id="applicationForm" name="Monthly Salary:" placeholder="What is your Monthly Salary?">
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <input type="name" class="form-control" id="applicationForm" name="Supervisor:" placeholder="Who is your supervisor?">
+            <input type="number" class="form-control" id="applicationForm" name=" Current Employer Phone Number:" placeholder="Phone Number for Present Employer">
+          </div>
+        </div>
+      </div>
+
+      <!--Second Occupants History-->
+
+    <!--Employment History-->
+
+    <!--Monthly Expenses-->
+
+    <p id="titleApp">Monthly Recurring Expenses</p>
+
+      <div class="row">
+        <label for="monthlyExpenses" class="form-label" name="monthlyExpenses">Monthly Expenses:</label>
+        <div class="col">
+          <div class="mb-3">
+            <input type="number" class="form-control" id="applicationForm" name="Car Payment:" placeholder="What is your monthly car payment?*" required>
+            <input type="number" class="form-control" id="applicationForm" name="Insurance:" placeholder="What is your monthly insurance payment?*" required>
+            <input type="number" class="form-control" id="applicationForm" name="Day Care:" placeholder="What is your monthly day care payment?*" required>
+            <input type="name" class="form-control" id="applicationForm" name="Credit Card:" placeholder="What is you monthly credit card payment?*" required>
+            <input type="text" class="form-control" id="applicationForm" name="Other:" placeholder="Do you have any other monthly expenses?*" required>
+          </div>
+        </div>
+      </div>
+
+    <!--Monthly Expenses-->
+
+    <!--General Questions-->
+
+    <p id="titleApp">Current Information</p>
+
+    <div class="row">
+      <label for="generalQuestions" class="form-label" name="generalQuestions">Please answer the following:</label>
+      <div class="col">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="applicationForm" name="Current Residence:" placeholder="What is your current residence?*" required>
+          <input type="number" class="form-control" id="applicationForm" name="Current Phone Number:" placeholder="What is your current phone number?*" required>
+          <input type="number" class="form-control" id="applicationForm" name="Day Care:" placeholder="Who is your current landlord?*" required>
+          <input type="number" class="form-control" id="applicationForm" name="Credit Card:" placeholder="What is your current landlord's phone number?*" required>
+        </div>
+      </div>
+    </div>
+
+    <!--General Questions-->
+
+    <!--Multimedia Upload-->
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Please upload a current copy of your Driver's License and proof of income:</label>
+      <input class="form-control" type="file"  id="applicationForm" required>
+      <input class="form-control" type="file" id="applicationForm" required>
+    </div>
+
+    <!--Multimedia Upload-->
+
+    <!--Submit Button-->
+
+    <div class="row buttonApp">
+      <div class="col">
+        <div>
+          <button class="btn btn-dark" type="submit" value="Submit">Ready to Submit? Click me!</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Submit Button-->
+
+    </div>
+  </form>
+
+    <!--Application-->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="icons">
+        <p id="footerTitles">Follow Us:
+          <a id="facebookLogo" href="https://www.facebook.com/people/Ferrell-Realty/100063717423982/?paipv=0&eav=AfZaerF4JceNs9NOGuBvmahobvJKDIYsvpB3bQhiuiMPv0DAZ6Ps2vt_c-Hl7ZSIyok&_rdr" target="_blank" class="me-4 text-reset">
+            <i class="facebook bi bi-facebook"></i>
+          </a> 
+        </p> 
+      </div>
+      <div class="footer-aboutUs">
+          <h6 id="footerTitles">
+              <i></i>Ferrell Realty
+            </h6>
+            <p id="footerBody">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ad unde incidunt et? Magni molestiae nisi repellat deleniti quam in deserunt ducimus fuga autem, nemo, fugit eos sapiente et id? Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+      </div>
+      <div class="footer-links">
+          <h6 id="footerTitles">
+              Useful links
+            </h6>          
+            <p>
+              <a class="nav-links" href="./index.html" class="text-reset" id="footerBody">Home</a>
+            </p>
+            <p>
+              <a class="nav-links" href="./properties.html" class="text-reset" id="footerBody">Properties</a>
+            </p>
+            <p>
+              <a class="nav-links" href="./storage.html" class="text-reset" id="footerBody">White Hall Storage</a>
+            </p>
+            <p>
+              <a class="nav-links" href="./current_residents.html" class="text-reset" id="footerBody">Contact Us</a>
+            </p>
+            <p>
+              <a class="nav-links" href="./apply.html" class="text-reset" id="footerBody">Current Residents</a>
+            </p>
+      </div>
+      <div class="footer-contactUs" >
+          <h6 id="footerTitles">Contact Us</h6>
+          <p><i class="bi bi-house-door-fill">  </i>7003 Dollarway Road, Suite 3</p>
+          <p><i class="bi bi-envelope-fill"></i>ferrellrealty@sbcglobal.net</p>
+          <p><i class="bi bi-telephone-fill"></i> 870-879-6585</p>
+      </div>
+  </footer>
+
+<!-- Footer -->
+</body>
+</html>
